@@ -1,0 +1,21 @@
+<ion-view>
+  <ion-header-bar ng-class="'bar-' + color_data.color">
+    <div class="buttons">
+      <button class="button button-icon icon ion-ios-arrow-back" ui-sref="login"> Назад</button>
+    </div>
+    <h1 class="title">Регистрация</h1>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="Name" ng-model="user.name">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Password" ng-model="user.password">
+      </label>
+    </div>
+    <button class="button button-full button-positive" ng-click="signup()">
+      Зарегистрироваться
+    </button>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,53 @@
+<ion-side-menus>
+
+  <ion-side-menu-content class="menu_shadow">
+    <ion-header-bar ng-class="'bar-' + color_data.color">
+      <div class="buttons">
+        <button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
+      </div>
+      <h1 class="title">Объявления</h1>
+      <div class="buttons">
+        <button class="button button-icon icon ion-ios-search" ng-click="showSearch()"></button>
+      </div>
+      <div class="list list-inset search_class" ng-class="{'active':isdiplay}">
+        <label class="item item-input label_search">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" ng-model="searchText" id="input_search" placeholder="Search">
+        </label>
+      </div>
+    </ion-header-bar>
+
+    <ion-content>
+      <ion-list ng-controller="carsCtrl as cars" class="headBody">
+        <div class="list">
+          <ion-item ng-repeat="car in carsData | filter:searchText">
+            <div class="item_list">
+              <a class="item items" href="{{car.href}}">
+                <img ng-src="{{ car.img }}" class="col-40" align="left">
+                <h2 class="items_car">{{ car.name + " " + car.model }} </h2>
+                <h3 class="cost">{{ car.cost * data.clientSide | currency:"":0 }}</h3>
+                <h3 class="act_date">{{car.date}}</h3>
+              </a>
+            </div>
+          </ion-item>
+        </div>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-dark">
+      <button class="button button-clear button-stable ion-android-person" ui-sref="login">Войти</button>
+      <a class="button icon ion-android-settings" href="#/setting" menu-close></a>
+    </ion-header-bar>
+    <ion-content>
+      <ul class="list">
+        <div class="item_left_menu">
+          <li><a href="#/main" class="item icon ion-ios-list-outline" menu-close>Объявления</a></li>
+          <li><a href="#/buy" class="item icon ion-ios-cart-outline" menu-close>Оценка авто</a></li>
+        </div>
+      </ul>
+    </ion-content>
+  </ion-side-menu>
+
+</ion-side-menus>

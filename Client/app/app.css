@@ -1,0 +1,64 @@
+h1 {
+  margin: 5px;
+  font-size: 120%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #677570;
+}
+
+label {
+  color: #797a7a;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 0.6em;
+}
+
+img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+select {
+  font-weight: bold;
+}
+
+.search_class {
+  border-radius: 15px;
+  display: none;
+  margin: 0 !important;
+  position: relative;
+  top: -2px;
+  z-index: 9999;
+  -webkit-transition: height .9s ease-in-out;
+  transition: all .9s ease-in-out;
+  height: 10px;
+  opacity: 0;
+}
+
+.search_class.active {
+  display: block;
+  height: 38px;
+  width: 75%;
+  opacity: 1;
+}
+
+#input_search{
+  background-color: #387EF5;
+  color: #f5f5f5;
+}
+
+.label_search{
+  border-radius: 10px;
+  opacity: .8;
+  background-color: #387EF5;
+  border-color: #387EF5;
+}
+
+.ion-search{
+  color: #efefef;
+}
+
+.row_setting{
+  padding: 1px;
+}

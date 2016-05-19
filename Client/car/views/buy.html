@@ -1,0 +1,161 @@
+<ion-view>
+  <ion-header-bar ng-class="'bar-' + color_data.color">
+    <div class="buttons">
+      <button class="button button-icon icon ion-ios-arrow-back" ui-sref="main"> Назад</button>
+    </div>
+    <h1 class="title">Оценка авто</h1>
+  </ion-header-bar>
+  <ion-content>
+    <form name="form1">
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Марка автомобиля
+      </div>
+      <select name="menu1" id="menu1" onChange="show_subs();">
+        <option selected></option>
+        <option value="ACURA">1+Acura</option>
+        <option value="ALFA_ROMEO">2+Alfa Romeo</option>
+        <option value="ALPHA"> value=""3+Alpina</option>
+        <option value="ASTON_MARTIN">4+Aston Martin</option>
+        <option value="AUDI">5+Audi</option>
+        <option value="BENTLEY">6+Bentley</option>
+        <option value="BMW">7+BMW</option>
+        <option value="BUGATTI">8+Bugatti</option>
+        <option value="BUICK">9+Buick</option>
+        <option value="CADILLAC">10+Cadillac</option>
+        <option value="CHEVROLET">11+Chevrolet</option>
+        <option value="CHRYSLER">12+Chrysler</option>
+        <option value="CITROEN">13+Citroen</option>
+        <option value="DACIA">14+Dacia</option>
+        <option value="DAEWOO">15+Daewoo</option>
+        <option value="DAIHATSU">16+Daihatsu</option>
+        <option value="DODGE">17+Dodge</option>
+        <option value="FERRARI">18+Ferrari</option>
+        <option value="FIAT">19+Fiat</option>
+        <option value="FORD">20+Ford</option>
+        <option value="GEELY">21+Geely</option>
+        <option value="GREAT_WALL">22+Great Wall</option>
+        <option value="HONDA">23+Honda</option>
+        <option value="">Hyundai</option>
+        <option value="">Infiniti</option>
+        <option value="">Isuzu</option>
+        <option value="">Iveco</option>
+        <option value="">Jeep</option>
+        <option value="">Kia</option>
+        <option value="">Lancia</option>
+        <option value="">Land Rover</option>
+        <option value="">Lexus</option>
+        <option value="">Lincoln</option>
+        <option value="">MAN</option>
+        <option value="">Mazda</option>
+        <option value="">Mercedes</option>
+        <option value="">Mitsubishi</option>
+        <option value="">Nissan</option>
+        <option value="">Opel</option>
+        <option value="">Peugeot</option>
+        <option value="">Pontiac</option>
+        <option value="">Porsche</option>
+        <option value="">Proton</option>
+        <option value="">Renalut</option>
+        <option value="">Rover</option>
+        <option value="">Saab</option>
+        <option value="">Scania</option>
+        <option value="">Seat</option>
+        <option value="">Skoda</option>
+        <option value="">SsangYong</option>
+        <option value="">Subaru</option>
+        <option value="">Suzuki</option>
+        <option value="">Toyota</option>
+        <option value="">Volkswagen</option>
+        <option value="">Volvo</option>
+        <option value="">Москвич</option>
+        <option value="">ВАЗ</option>
+        <option value="">ГАЗ</option>
+        <option value="">ЗАЗ</option>
+        <option value="">ЗИЛ</option>
+        <option value="">УАЗ</option>
+        <option value="">КАМАЗ</option>
+        <option value="">МАЗ</option>
+      </select>
+    </label>
+
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Модель
+      </div>
+      <select name="menu2" id="menu2" onChange="">
+        <option></option>
+      </select>
+    </label>
+
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Год выпуска
+      </div>
+      <select>
+        <option selected></option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+        <option>2007</option>
+        <option>2006</option>
+        <option>2005</option>
+        <option>2004</option>
+        <option>2003</option>
+        <option>2001</option>
+        <option>2000</option>
+        <option>1999</option>
+        <option>1998</option>
+        <option>1997</option>
+        <option>1996</option>
+        <option>1995</option>
+        <option>1994</option>
+        <option>1993</option>
+        <option>1992</option>
+        <option>1991</option>
+        <option>1990</option>
+        <option>1989</option>
+        <option>1987</option>
+        <option>1986</option>
+        <option>1985</option>
+        <option>1984</option>
+        <option>1983</option>
+        <option>1982</option>
+        <option>1981</option>
+        <option>1980</option>
+        <option>1979</option>
+        <option>1978</option>
+        <option>1977</option>
+        <option>1976</option>
+        <option>1975</option>
+        <option>1974</option>
+        <option>1973</option>
+        <option>1972</option>
+        <option>1971</option>
+        <option>1970</option>
+      </select>
+    </label>
+
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Тип топлива
+      </div>
+      <select>
+        <option selected></option>
+        <option>Газ</option>
+        <option>Бензин</option>
+        <option>Дизель</option>
+      </select>
+    </label>
+  </form>
+
+  <button class="button button-block button-outline button-stable" onclick="GetCost()">Показать</button>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,49 @@
+.items_car {
+  line-height: 1.0em;
+  font-size: 14px;
+  color: #1F5FBF;
+}
+
+.item_list {
+  margin: -17px;
+}
+
+.item_left_menu.item {
+  margin: -10px;
+  padding-top: 8px;
+  padding-bottom: 0;
+}
+
+.item_left_menu {
+  margin: -17px;
+}
+
+.cost {
+  color: #d43f3a;
+}
+
+.title {
+  text-align: center;
+}
+
+a.items{
+  padding: 0;
+}
+
+ul.list {
+  margin: 0;
+  padding: 15px;
+  border: 1px solid #f3f3fa;
+}
+
+.menu_shadow {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.log_in {
+  padding-top: 25px;
+}
+
+.bord_rad_btn{
+  border-radius: 30px;
+}

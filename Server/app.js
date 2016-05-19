@@ -15,12 +15,9 @@ var request    = require("request");
 var dt = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '') ;
 
 app.use(cors());
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
 app.use(morgan('dev'));
-
 app.use(passport.initialize());
 
 mongoose.connect(config.database);
